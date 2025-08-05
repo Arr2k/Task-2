@@ -1,0 +1,34 @@
+SAMPLE 1, phishing email
+
+Subject: Urgent Action Required: Your Account Has Been Compromised!
+From: security-update@micros0ft-support.com
+
+Dear Customer,
+
+We have detected unauthorized login attempts on your account.
+Please verify your identity immediately to avoid service interruption.
+
+Click Here to Verify Now
+
+Failure to act within 24 hours will result in account suspension.
+
+Regards,
+Microsoft Support
+
+SAMPLE 2 
+
+using sample email header and using tools such as:
+Google Admin Toolbox Header Analyzer,
+MXToolbox Analyzer
+
+Return-Path: <security-update@paypal.com>
+Received: from unknown.host123.biz (unknown [203.0.113.45])
+    by mail.yourdomain.com with ESMTP id AB1234CD
+    for <yourname@example.com>; Tue, 5 Aug 2025 14:33:02 +0530
+Received-SPF: Fail (mail.yourdomain.com: domain of paypal.com does not designate 203.0.113.45 as permitted sender)
+DKIM-Signature: none
+From: PayPal Security <security-update@paypal.com>
+To: yourname@example.com
+Subject: Urgent: Your PayPal Account Is On Hold
+Date: Tue, 5 Aug 2025 14:33:01 +0530
+Message-ID: <001a114b0b8b$1ac09a00$5c41ce00$@host123.biz>
